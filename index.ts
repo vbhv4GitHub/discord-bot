@@ -9,10 +9,10 @@ client.on('ready', () => {
 	console.log(`${client.user?.tag} is now launched to the orbit!! 🚀`);
 });
 
-client.on('messageCreate', async (message) => {
+client.on('messageCreate', (message) => {
 
 	if (message.content === 'ping') {
-		await message.channel.send('Pong!');
+		message.channel.send('Pong!');
 	}
 });
 
