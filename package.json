@@ -4,6 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"tsc": "tsc",
+		"postinstall": "npm run tsc",
 		"build": "rm -rf ./dist/* && tsc --build",
 		"start": "npm run build && nodemon dist/index.js"
 	},
